@@ -126,7 +126,7 @@
       school: 'CCM João Cavalli da Costa',
       bio: 'Estudante pesquisador participante da Maratona Tech e entusiasta de hardware livre e jornalismo estudantil.',
       avatarUrl: '',
-      bannerUrl: 'assets/tech/maratona-tech-1.jpg',
+      bannerUrl: 'tech/maratona-tech-1.jpg',
       interests: ['Robótica & IA', 'Iniciação Científica', 'Fotografia', 'Jornalismo'],
       links: [
         { label: 'Currículo Lattes', url: 'http://lattes.cnpq.br/' },
@@ -141,7 +141,7 @@
       school: 'CCM João Cavalli da Costa',
       bio: 'Fotógrafa documental apaixonada pelo registro do cotidiano escolar e da arquitetura do Paraná.',
       avatarUrl: '',
-      bannerUrl: 'assets/tech/maratona-tech-2.jpg',
+      bannerUrl: 'tech/maratona-tech-2.jpg',
       interests: ['Fotografia Documental', 'Sociologia Urbana', 'Patrimônio'],
       links: [
         { label: 'Portfólio Visual', url: 'https://instagram.com/' }
@@ -155,7 +155,7 @@
       school: 'CCM João Cavalli da Costa',
       bio: 'Líder do Grêmio de Ciências. Pesquisando sensores ambientais e biomateriais alternativos para sustentabilidade.',
       avatarUrl: '',
-      bannerUrl: 'assets/lab/trabalho-fisica.jpg',
+      bannerUrl: 'lab/trabalho-fisica.jpg',
       interests: ['Química Ambiental', 'Robótica IoT', 'Biologia'],
       links: [
         { label: 'Projeto Feira de Ciências', url: 'https://febrace.org.br/' }
@@ -169,7 +169,7 @@
       school: 'CCM João Cavalli da Costa',
       bio: 'Editor do fanzine independente "Entrelinhas Poéticas" e pesquisador da literatura moderna paranaense.',
       avatarUrl: '',
-      bannerUrl: 'assets/literatura/poesia-estudante-1.jpg',
+      bannerUrl: 'literatura/poesia-estudante-1.jpg',
       interests: ['Literatura', 'Poesia Concreta', 'Fanzines'],
       links: [
         { label: 'Coletivo Poético', url: 'https://medium.com/' }
@@ -183,7 +183,7 @@
       school: 'CCM João Cavalli da Costa',
       bio: 'Mediadoras de leitura do colégio. Apresentamos resenhas em vídeo de clássicos e novas leituras juvenis.',
       avatarUrl: '',
-      bannerUrl: 'assets/artes/trabalho-arte.jpg',
+      bannerUrl: 'artes/trabalho-arte.jpg',
       interests: ['Crítica Literária', 'Audiovisual', 'Teatro'],
       links: [
         { label: 'Canal de Resenhas', url: 'https://youtube.com/' }
@@ -197,7 +197,7 @@
       school: 'CCM João Cavalli da Costa',
       bio: 'Líder do Pelotão de Guarda de Honra e participante ativo dos projetos de artes visuais e cidadania participativa.',
       avatarUrl: '',
-      bannerUrl: 'assets/institucional/pelotao-bandeiras.mp4',
+      bannerUrl: 'institucional/pelotao-bandeiras.mp4',
       interests: ['Civismo & Liderança', 'Escultura', 'Comunicação Comunitária'],
       links: [
         { label: 'Portal Cívico CCMPR', url: 'https://www.educacao.pr.gov.br/' }
@@ -301,20 +301,20 @@
       media: [
         {
           type: 'image',
-          data: 'assets/tech/maratona-tech-1.jpg',
-          thumbnail: 'assets/tech/maratona-tech-1.jpg',
+          data: 'tech/maratona-tech-1.jpg',
+          thumbnail: 'tech/maratona-tech-1.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/tech/maratona-tech-2.jpg',
-          thumbnail: 'assets/tech/maratona-tech-2.jpg',
+          data: 'tech/maratona-tech-2.jpg',
+          thumbnail: 'tech/maratona-tech-2.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/tech/maratona-tech-3.jpg',
-          thumbnail: 'assets/tech/maratona-tech-3.jpg',
+          data: 'tech/maratona-tech-3.jpg',
+          thumbnail: 'tech/maratona-tech-3.jpg',
           mimeType: 'image/jpeg'
         }
       ],
@@ -340,14 +340,14 @@
       media: [
         {
           type: 'video',
-          data: 'assets/lab/experimento-foguete.mp4',
-          thumbnail: 'assets/lab/trabalho-fisica.jpg',
+          data: 'lab/experimento-foguete.mp4',
+          thumbnail: 'lab/trabalho-fisica.jpg',
           mimeType: 'video/mp4'
         },
         {
           type: 'image',
-          data: 'assets/lab/trabalho-fisica.jpg',
-          thumbnail: 'assets/lab/trabalho-fisica.jpg',
+          data: 'lab/trabalho-fisica.jpg',
+          thumbnail: 'lab/trabalho-fisica.jpg',
           mimeType: 'image/jpeg'
         }
       ],
@@ -373,20 +373,20 @@
       media: [
         {
           type: 'image',
-          data: 'assets/literatura/poesia-estudante-1.jpg',
-          thumbnail: 'assets/literatura/poesia-estudante-1.jpg',
+          data: 'literatura/poesia-estudante-1.jpg',
+          thumbnail: 'literatura/poesia-estudante-1.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/literatura/poesia-estudante-2.jpg',
-          thumbnail: 'assets/literatura/poesia-estudante-2.jpg',
+          data: 'literatura/poesia-estudante-2.jpg',
+          thumbnail: 'literatura/poesia-estudante-2.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/literatura/poesia-estudante-3.jpg',
-          thumbnail: 'assets/literatura/poesia-estudante-3.jpg',
+          data: 'literatura/poesia-estudante-3.jpg',
+          thumbnail: 'literatura/poesia-estudante-3.jpg',
           mimeType: 'image/jpeg'
         }
       ],
@@ -412,14 +412,14 @@
       media: [
         {
           type: 'video',
-          data: 'assets/literatura/resenha-leticia.mp4',
-          thumbnail: 'assets/artes/trabalho-arte.jpg',
+          data: 'literatura/resenha-leticia.mp4',
+          thumbnail: 'artes/trabalho-arte.jpg',
           mimeType: 'video/mp4'
         },
         {
           type: 'video',
-          data: 'assets/literatura/resenha-helo-luiza.mp4',
-          thumbnail: 'assets/artes/trabalho-arte.jpg',
+          data: 'literatura/resenha-helo-luiza.mp4',
+          thumbnail: 'artes/trabalho-arte.jpg',
           mimeType: 'video/mp4'
         }
       ],
@@ -445,20 +445,20 @@
       media: [
         {
           type: 'image',
-          data: 'assets/artes/trabalho-arte.jpg',
-          thumbnail: 'assets/artes/trabalho-arte.jpg',
+          data: 'artes/trabalho-arte.jpg',
+          thumbnail: 'artes/trabalho-arte.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/artes/trabalho-aluno-1.jpg',
-          thumbnail: 'assets/artes/trabalho-aluno-1.jpg',
+          data: 'artes/trabalho-aluno-1.jpg',
+          thumbnail: 'artes/trabalho-aluno-1.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/artes/trabalho-aluno-2.jpg',
-          thumbnail: 'assets/artes/trabalho-aluno-2.jpg',
+          data: 'artes/trabalho-aluno-2.jpg',
+          thumbnail: 'artes/trabalho-aluno-2.jpg',
           mimeType: 'image/jpeg'
         }
       ],
@@ -484,14 +484,14 @@
       media: [
         {
           type: 'video',
-          data: 'assets/lab/sensor-fumaca.mp4',
-          thumbnail: 'assets/tech/maratona-tech-5.jpg',
+          data: 'lab/sensor-fumaca.mp4',
+          thumbnail: 'tech/maratona-tech-5.jpg',
           mimeType: 'video/mp4'
         },
         {
           type: 'image',
-          data: 'assets/tech/maratona-tech-4.jpg',
-          thumbnail: 'assets/tech/maratona-tech-4.jpg',
+          data: 'tech/maratona-tech-4.jpg',
+          thumbnail: 'tech/maratona-tech-4.jpg',
           mimeType: 'image/jpeg'
         }
       ],
@@ -517,14 +517,14 @@
       media: [
         {
           type: 'video',
-          data: 'assets/lab/botanica-7ano.mp4',
-          thumbnail: 'assets/tech/maratona-tech-6.jpg',
+          data: 'lab/botanica-7ano.mp4',
+          thumbnail: 'tech/maratona-tech-6.jpg',
           mimeType: 'video/mp4'
         },
         {
           type: 'image',
-          data: 'assets/tech/maratona-tech-6.jpg',
-          thumbnail: 'assets/tech/maratona-tech-6.jpg',
+          data: 'tech/maratona-tech-6.jpg',
+          thumbnail: 'tech/maratona-tech-6.jpg',
           mimeType: 'image/jpeg'
         }
       ],
@@ -550,20 +550,20 @@
       media: [
         {
           type: 'video',
-          data: 'assets/institucional/alunos-hino.mp4',
-          thumbnail: 'assets/branding/logo-ccm.jpg',
+          data: 'institucional/alunos-hino.mp4',
+          thumbnail: 'branding/logo-ccm.jpg',
           mimeType: 'video/mp4'
         },
         {
           type: 'video',
-          data: 'assets/institucional/pelotao-bandeiras.mp4',
-          thumbnail: 'assets/branding/logo-cavalli.jpg',
+          data: 'institucional/pelotao-bandeiras.mp4',
+          thumbnail: 'branding/logo-cavalli.jpg',
           mimeType: 'video/mp4'
         },
         {
           type: 'video',
-          data: 'assets/institucional/escola-marchando.mp4',
-          thumbnail: 'assets/branding/logo-ccm.jpg',
+          data: 'institucional/escola-marchando.mp4',
+          thumbnail: 'branding/logo-ccm.jpg',
           mimeType: 'video/mp4'
         }
       ],
@@ -589,26 +589,26 @@
       media: [
         {
           type: 'image',
-          data: 'assets/artes/trabalho-aluno-3.jpg',
-          thumbnail: 'assets/artes/trabalho-aluno-3.jpg',
+          data: 'artes/trabalho-aluno-3.jpg',
+          thumbnail: 'artes/trabalho-aluno-3.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/artes/trabalho-aluno-4.jpg',
-          thumbnail: 'assets/artes/trabalho-aluno-4.jpg',
+          data: 'artes/trabalho-aluno-4.jpg',
+          thumbnail: 'artes/trabalho-aluno-4.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/artes/trabalho-aluno-5.jpg',
-          thumbnail: 'assets/artes/trabalho-aluno-5.jpg',
+          data: 'artes/trabalho-aluno-5.jpg',
+          thumbnail: 'artes/trabalho-aluno-5.jpg',
           mimeType: 'image/jpeg'
         },
         {
           type: 'image',
-          data: 'assets/artes/trabalho-aluno-6.jpg',
-          thumbnail: 'assets/artes/trabalho-aluno-6.jpg',
+          data: 'artes/trabalho-aluno-6.jpg',
+          thumbnail: 'artes/trabalho-aluno-6.jpg',
           mimeType: 'image/jpeg'
         }
       ],
@@ -634,14 +634,14 @@
       media: [
         {
           type: 'video',
-          data: 'assets/literatura/resenha-tais.mp4',
-          thumbnail: 'assets/literatura/poesia-estudante-4.jpg',
+          data: 'literatura/resenha-tais.mp4',
+          thumbnail: 'literatura/poesia-estudante-4.jpg',
           mimeType: 'video/mp4'
         },
         {
           type: 'image',
-          data: 'assets/literatura/poesia-estudante-4.jpg',
-          thumbnail: 'assets/literatura/poesia-estudante-4.jpg',
+          data: 'literatura/poesia-estudante-4.jpg',
+          thumbnail: 'literatura/poesia-estudante-4.jpg',
           mimeType: 'image/jpeg'
         }
       ],
