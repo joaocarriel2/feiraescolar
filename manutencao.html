@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site em Manutenção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --cream: #fdf6ef;
+      --paper: #fdf2f5;
+      --burgundy: #420015;
+      --rose: #751735;
+      --blush: #a84363;
+      --pink: #ffccdc;
+      --warm: #f7eedf;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      background-color: var(--cream);
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(168,67,99,0.07) 27px, rgba(168,67,99,0.07) 28px),
+        repeating-linear-gradient(90deg, transparent, transparent 27px, rgba(168,67,99,0.04) 27px, rgba(168,67,99,0.04) 28px);
+      font-family: 'Special Elite', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      overflow: hidden;
+    }
+
+    /* floating hearts bg */
+    .hearts-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+    .hearts-bg span {
+      position: absolute;
+      font-size: 1.4rem;
+      opacity: 0;
+      animation: floatUp linear infinite;
+    }
+    @keyframes floatUp {
+      0%   { transform: translateY(110vh) rotate(-15deg); opacity: 0; }
+      10%  { opacity: 0.35; }
+      90%  { opacity: 0.2; }
+      100% { transform: translateY(-10vh) rotate(15deg); opacity: 0; }
+    }
+
+    /* main card */
+    .card {
+      position: relative;
+      z-index: 10;
+      background: var(--paper);
+      border: 2px solid var(--rose);
+      max-width: 640px;
+      width: 100%;
+      padding: 3rem 3rem 3.5rem;
+      box-shadow: 6px 6px 0 var(--burgundy), 12px 12px 32px rgba(66,0,21,0.18);
+      transform: rotate(-0.8deg);
+      animation: gentleWobble 6s ease-in-out infinite;
+    }
+    @keyframes gentleWobble {
+      0%, 100% { transform: rotate(-0.8deg) translateY(0); }
+      50%       { transform: rotate(0.4deg) translateY(-5px); }
+    }
+
+    /* washi tape strips */
+    .washi {
+      position: absolute;
+      height: 22px;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255,204,220,0.75) 0px,
+        rgba(255,204,220,0.75) 8px,
+        rgba(117,23,53,0.25) 8px,
+        rgba(117,23,53,0.25) 16px
+      );
+      border-top: 1px solid rgba(117,23,53,0.3);
+      border-bottom: 1px solid rgba(117,23,53,0.3);
+    }
+    .washi-top {
+      width: 140px;
+      top: -11px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-2deg);
+    }
+    .washi-corner {
+      width: 90px;
+      top: -11px;
+      right: 32px;
+      transform: rotate(5deg);
+    }
+
+    /* stamp */
+    .stamp {
+      position: absolute;
+      top: 1.4rem;
+      right: 1.8rem;
+      border: 2.5px solid var(--rose);
+      padding: 6px 10px;
+      text-align: center;
+      transform: rotate(8deg);
+      background: var(--warm);
+      box-shadow: 2px 2px 0 var(--blush);
+    }
+    .stamp p {
+      font-family: 'Special Elite', monospace;
+      font-size: 9px;
+      color: var(--rose);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      line-height: 1.5;
+    }
+    .stamp-heart { font-size: 20px; display: block; line-height: 1; }
+
+    /* label badge */
+    .label {
+      display: inline-block;
+      background: var(--burgundy);
+      color: var(--pink);
+      font-family: 'Special Elite', monospace;
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      margin-bottom: 1rem;
+    }
+
+    /* title */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 6vw, 4rem);
+      color: var(--burgundy);
+      font-weight: 700;
+      line-height: 1.05;
+      margin-bottom: 0.15em;
+    }
+
+    /* divider */
+    .divider {
+      border: none;
+      border-top: 2px dashed var(--blush);
+      margin: 1.25rem 0;
+      opacity: 0.6;
+    }
+
+    /* subtitle */
+    .subtitle {
+      font-family: 'Caveat', cursive;
+      font-size: clamp(1.35rem, 3.5vw, 1.8rem);
+      color: var(--rose);
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 1.5rem;
+    }
+
+    /* hearts row */
+    .hearts-row {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .hearts-row span {
+      font-size: 1.6rem;
+      display: inline-block;
+      animation: heartbeat 1.6s ease-in-out infinite;
+    }
+    .hearts-row span:nth-child(2) { animation-delay: 0.25s; }
+    .hearts-row span:nth-child(3) { animation-delay: 0.5s; }
+    .hearts-row span:nth-child(4) { animation-delay: 0.75s; }
+    .hearts-row span:nth-child(5) { animation-delay: 1s; }
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      40%       { transform: scale(1.25); }
+      60%       { transform: scale(0.95); }
+    }
+
+    /* progress / decoration bar */
+    .progress-wrapper {
+      background: var(--pink);
+      border: 1.5px solid var(--blush);
+      padding: 0.7rem 1rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .progress-label {
+      font-family: 'Special Elite', monospace;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--burgundy);
+      margin-bottom: 6px;
+    }
+    .progress-track {
+      height: 8px;
+      background: rgba(66,0,21,0.12);
+      border: 1px solid var(--rose);
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--rose), var(--blush));
+      animation: progressAnim 3s ease-in-out infinite alternate;
+    }
+    @keyframes progressAnim {
+      0%   { width: 40%; }
+      100% { width: 85%; }
+    }
+
+    /* bottom note */
+    .note {
+      background: var(--warm);
+      border-left: 3px solid var(--rose);
+      padding: 0.75rem 1rem;
+      font-family: 'Caveat', cursive;
+      font-size: 1.1rem;
+      color: var(--burgundy);
+      line-height: 1.5;
+    }
+    .note em {
+      font-style: italic;
+      color: var(--blush);
+    }
+
+    /* corner decoration */
+    .corner-decor {
+      position: absolute;
+      bottom: 1rem;
+      right: 1.5rem;
+      font-family: 'Special Elite', monospace;
+      font-size: 9px;
+      color: var(--blush);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      transform: rotate(3deg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- floating hearts background -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <div class="card">
+    <!-- washi tapes -->
+    <div class="washi washi-top"></div>
+    <div class="washi washi-corner"></div>
+
+    <!-- stamp -->
+    <div class="stamp">
+      <span class="stamp-heart">♡</span>
+      <p>voltamos<br>em breve</p>
+    </div>
+
+    <!-- label -->
+    <div class="label">vol. i · atualização especial</div>
+
+    <!-- main title -->
+    <h1>Site em Manutenção</h1>
+
+    <hr class="divider"/>
+
+    <!-- subtitle -->
+    <p class="subtitle">
+      estamos tentando melhorar tudo para o felipo!
+    </p>
+
+    <!-- hearts -->
+    <div class="hearts-row">
+      <span>🤍</span>
+      <span>🩷</span>
+      <span>❤️</span>
+      <span>🩷</span>
+      <span>🤍</span>
+    </div>
+
+    <!-- progress bar -->
+    <div class="progress-wrapper">
+      <div class="progress-label">progresso — coisas especiais a caminho…</div>
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- note -->
+    <div class="note">
+      — voltamos logo, meu bem. <em>cada detalhe está sendo feito com carinho.</em> ♡
+    </div>
+
+    <div class="corner-decor">filed: nov 14, 1988 • in progress</div>
+  </div>
+
+  <script>
+    // Generate floating background hearts
+    const bg = document.getElementById('heartsBg');
+    const emojis = ['♡', '♡', '♡', '🩷', '❤', '✿', '♡'];
+    for (let i = 0; i < 22; i++) {
+      const s = document.createElement('span');
+      s.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      s.style.left = Math.random() * 100 + 'vw';
+      s.style.animationDuration = (8 + Math.random() * 12) + 's';
+      s.style.animationDelay = (Math.random() * 12) + 's';
+      s.style.fontSize = (0.9 + Math.random() * 1.4) + 'rem';
+      s.style.color = ['#a84363','#751735','#ffccdc','#db849f'][Math.floor(Math.random()*4)];
+      bg.appendChild(s);
+    }
+  </script>
+</body>
+</html>
